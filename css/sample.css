@@ -6,6 +6,8 @@
     padding: 6px;
     background-color: #eee;
     border: 1px solid #b9b9b9;
+    color: #f00;
+    font-size: 24px;
 }
 
 .sample_table td {
