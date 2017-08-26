@@ -5,7 +5,7 @@
         var tr = event.srcElement.parentElement.parentElement;
         var unitPrice = parseInt(tr.children[1].innerHTML);
         var number = parseInt(tr.getElementsByTagName('input')[0].value);
-        tr.children[3].innerHTML = unitPrice * number;
+        tr.children[3].innerHTML = unitPrice * number * 1.08;
     }
 
     if (tbody !== null) {
