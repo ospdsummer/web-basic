@@ -11,7 +11,7 @@
             memo = data.memo;
         }
         // Update HTML
-        document.getElementById('current_memo').innerHTML = memo;
+        document.getElementById('current_memo').innerHTML = "新規:" + memo;
     });
     
     // Bind update function to Click event
