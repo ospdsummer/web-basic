@@ -1,18 +1,13 @@
---- /etc/mysql/my.cnf	2014-02-19 21:18:21.000000000 +0000
-+++ my.cnf	2016-07-26 02:33:31.178259344 +0000
-@@ -17,6 +17,7 @@
- # escpecially if they contain "#" chars...
- # Remember to edit /etc/mysql/debian.cnf when changing the socket location.
- [client]
-+default-character-set = utf8
- port		= 3306
- socket		= /var/run/mysqld/mysqld.sock
- 
-@@ -29,6 +30,7 @@
- nice		= 0
- 
- [mysqld]
+--- /etc/my.cnf 2018-09-03 21:49:04.948771044 +0000
++++ my.cnf      2018-09-03 21:45:51.540943371 +0000
+@@ -3,6 +3,10 @@ datadir=/var/lib/mysql
+ socket=/var/lib/mysql/mysql.sock
+ # Disabling symbolic-links is recommended to prevent assorted security risks
+ symbolic-links=0
 +character-set-server = utf8
- #
- # * Basic Settings
- #
++
++[client]
++default-character-set=utf8
+ # Settings user and group are ignored when systemd is used.
+ # If you need to run mysqld under a different user or group,
+ # customize your systemd unit file for mysqld according to the
